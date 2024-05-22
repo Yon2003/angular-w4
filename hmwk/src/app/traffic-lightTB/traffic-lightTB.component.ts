@@ -60,6 +60,7 @@ export class TrafficLightComponentTB implements OnInit{
             this.isYellowOn = true;
             setTimeout(() => {
               this.isYellowOn = false;
+              this.startTrafficLights();
             }, 2000);
           }, 5000);
         }, 2000);
