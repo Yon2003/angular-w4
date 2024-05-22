@@ -1,0 +1,31 @@
+
+.traffic-light {
+  width: 300px; /* Adjust width to fit horizontal layout */
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: space-around; /* Space out the lights evenly */
+  margin: 20px auto; /* Center the traffic light horizontally on the page */
+}
+
+.light {
+  width: 80px;
+  height: 80px;
+  margin: 0 5px; /* Horizontal spacing between lights */
+  border-radius: 50%;
+  background-color: #555;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}

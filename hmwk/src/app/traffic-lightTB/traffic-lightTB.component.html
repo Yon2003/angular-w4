@@ -1,0 +1,6 @@
+<div class="traffic-light">
+  <div class="light" [ngClass]="{'red': isRedOn}"></div>
+  <div class="light" [ngClass]="{'yellow': isYellowOn}"></div>
+  <div class="light" [ngClass]="{'green': isGreenOn}"></div>
+</div>
+<button [disabled]="isRedOn" (click)="checkAndAlertYellow()">Пресечи</button>
