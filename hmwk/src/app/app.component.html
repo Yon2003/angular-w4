@@ -1,13 +1,14 @@
 <div class="grid-container">
-<div class="grid-item"></div>
-<div class="grid-item"><app-traffic-lightTB ></app-traffic-lightTB></div>
-<div class="grid-item"></div>  
-<div class="grid-item"><app-traffic-lightlr ></app-traffic-lightlr></div>
-<div class="grid-item">
-    <!-- <button (click)="triggerAvaria()">Авария</button> -->
-</div>
-<div class="grid-item"><app-traffic-lightlr ></app-traffic-lightlr></div>  
-<div class="grid-item"></div>
-<div class="grid-item"><app-traffic-lightTB ></app-traffic-lightTB></div>
-<div class="grid-item"></div> 
-</div>
+    <div class="grid-item"></div>
+    <div class="grid-item"><app-traffic-lightTB [avaria]="avaria"></app-traffic-lightTB></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"><app-traffic-lightlr [avaria]="avaria"></app-traffic-lightlr></div>
+    <div class="grid-item">
+      <button [disabled]="isButtonDisabled" (click)="triggerAvaria()" class="emergency-button">Авария</button>
+    </div>
+    <div class="grid-item"><app-traffic-lightlr [avaria]="avaria"></app-traffic-lightlr></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"><app-traffic-lightTB [avaria]="avaria"></app-traffic-lightTB></div>
+    <div class="grid-item"></div>
+  </div>
+  

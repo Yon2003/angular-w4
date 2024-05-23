@@ -1,7 +1,6 @@
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: #2196F3;
     padding: 10px;
   }
   .grid-item {
@@ -11,3 +10,34 @@
     font-size: 30px;
     text-align: center;
   }
+  /* Центриране на контейнера на бутона */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+/* Стилизиране на бутона */
+.emergency-button {
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 50px;
+  margin-top: 19%;
+  font-size: 50px;
+}
+
+.emergency-button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+.emergency-button:hover:not(:disabled) {
+  background-color: darkred;
+}

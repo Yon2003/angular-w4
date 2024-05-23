@@ -18,19 +18,21 @@ import { TrafficLightComponentTB } from './traffic-lightTB/traffic-lightTB.compo
 })
 
 export class AppComponent {
-    // avaria: boolean = false;
-    // avaria1: boolean = false;
-
-    // triggerAvaria() {
-    //   this.avaria = true;
-    //   setTimeout(() => {
-    //     this.avaria = false;
-    //   }, 5050);
-    // }
-    // triggerAvaria1() {
-    //     this.avaria1 = true;
-    //     setTimeout(() => {
-    //       this.avaria1 = false;
-    //     }, 5050);
-    //   }
-}
+    avaria: boolean = false;
+    isButtonDisabled: boolean = false;
+  
+    triggerAvaria() {
+      this.avaria = true;
+      this.isButtonDisabled = true;
+  
+      // Аварийното състояние ще продължи 10 секунди
+      setTimeout(() => {
+        this.avaria = false;
+  
+        // Бутонът ще остане неактивен още 10 секунди след края на аварията
+        setTimeout(() => {
+          this.isButtonDisabled = false;
+        }, 10000);
+      }, 10000);
+    }
+  }
