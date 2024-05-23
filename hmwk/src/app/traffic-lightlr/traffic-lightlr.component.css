@@ -1,7 +1,7 @@
 .traffic-light {
   display: flex;
-  flex-direction: column; /* Arrange lights vertically */
-  justify-content: space-around; /* Evenly distribute lights vertically */
+  flex-direction: column;
+  justify-content: space-around;
   background-color: #333;
   padding: 20px;
   border-radius: 10px;
@@ -13,7 +13,7 @@
 .light {
   width: 80px;
   height: 80px;
-  margin: 10px 0; /* Horizontal spacing between lights */
+  margin: 10px 0;
   border-radius: 50%;
   background-color: #555;
 }

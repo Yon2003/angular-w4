@@ -25,11 +25,9 @@ export class AppComponent {
       this.avaria = true;
       this.isButtonDisabled = true;
   
-      // Аварийното състояние ще продължи 10 секунди
       setTimeout(() => {
         this.avaria = false;
   
-        // Бутонът ще остане неактивен още 10 секунди след края на аварията
         setTimeout(() => {
           this.isButtonDisabled = false;
         }, 10000);

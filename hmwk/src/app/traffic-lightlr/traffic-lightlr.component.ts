@@ -36,7 +36,7 @@ export class TrafficLightComponentLR implements OnInit, OnChanges {
   }
 
   startTrafficLights(): void {
-    this.stopTrafficLights(); // Clear any existing intervals
+    this.stopTrafficLights();
     this.isGreenOn = true;
     this.intervalId = setTimeout(() => {
       this.isGreenOn = false;
